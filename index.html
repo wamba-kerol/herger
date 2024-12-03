@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="index.css">
+    <title>App Mashup</title>
+ 
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>App Mashup</h1>
+        <input type="text" id="search-input" placeholder="Rechercher...">
+    </div>
+    <div id="content">
+        <!-- Informations sur la qualité de l'air -->
+        <div id="info">
+            <div id="location"></div>
+            <div id="aqi"></div>
+            <div id="pollutants"></div>
+        </div>
+
+        <!-- Carte Google Maps -->
+        <div id="map-container">
+          
+            <div id="map"></div>
+            <div class="panel">
+                <h3>Restaurants Nearby</h3>
+                <div id="restaurants-list">
+                    <!-- Restaurants will be listed here -->
+                </div>
+            </div>
+
+            <div class="weather">
+                <h3>Weather</h3>
+                <p id="weather-data">Loading weather data...</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Google Maps API -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSUtkpMLHhy2WYN7Cx6yG1LnWJFw9K688&libraries=places"></script>
+
+    <script src="./index.js">
+       
+    </script>
+
+</body>
+</html>
